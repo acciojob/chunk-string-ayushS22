@@ -2,6 +2,9 @@ function stringChop(str, size) {
   // your code here
 	 // Convert size to number (prompt gives string)
   size = Number(size);
+	if (str === null || str === undefined || str === "") {
+  return [];
+}
 
   // Edge case: if size <= 0 return whole string
   if (size <= 0) return [str];
